@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeepGreen | AI-Powered Satellite Auditing Platform</title>
     <link rel="icon" href="/images/global/site-icon.png" />
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-theme");
+        }
+      })();
+    </script>
 
     <link rel="stylesheet" href="/css/transition.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
@@ -28,12 +36,14 @@
     </div>
 
     <div class="page home-page">
-        <!-- nav -->
         <nav>
           <div class="logo">
             <div class="logo-container">
               <p class="mn"><a href="/">D ✦ G</a></p>
             </div>
+          </div>
+          <div class="theme-toggle-btn">
+            <p class="mn">Theme</p>
           </div>
           <div class="menu-toggle-btn">
             <div class="menu-toggle-btn-wrapper">

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DeepGreen Auditor | Satellite Verification Simulator</title>
     <link rel="icon" href="/images/global/site-icon.png" />
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-theme");
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="/css/transition.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/globals.css" />
@@ -25,6 +33,9 @@
           <div class="logo-container">
             <p class="mn"><a href="/">D ✦ G</a></p>
           </div>
+        </div>
+        <div class="theme-toggle-btn">
+          <p class="mn">Theme</p>
         </div>
       </nav>
       <section class="contact trail-container">
@@ -103,5 +114,6 @@
     </div>
     <script type="module" src="/js/transition.js"></script>
     <script type="module" src="/js/contact.js"></script>
+    <script type="module" src="/js/menu.js"></script>
   </body>
 </html>

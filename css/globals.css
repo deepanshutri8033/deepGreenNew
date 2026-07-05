@@ -1,12 +1,38 @@
 :root {
-    --bg: #f4f7f2;
-    --bg2: #e3eada;
-    --fg: #0c1d10;
-    --accent1: #107c41; /* DeepGreen Primary Green */
-    --accent2: #4caf50; /* Vibrant Leaf Green */
-    --accent3: #81c784; /* Soft Mint Green */
-    --accent4: #083c20; /* Dark Hunter Green */
-  }
+    --bg: #f4f7f2;       /* Light pale grey-greenish */
+    --bg2: #e3eada;      /* Soft pale moss green */
+    --fg: #0c1d10;       /* Dark near-black forest green */
+    --accent1: #107c41;  /* DeepGreen Primary Green */
+    --accent2: #4caf50;  /* Vibrant Leaf Green */
+    --accent3: #81c784;  /* Soft Mint Green */
+    --accent4: #083c20;  /* Dark Hunter Green */
+}
+
+html.dark-theme {
+    --bg: #050e08;       /* Tech dark green-black */
+    --bg2: #0a1c11;      /* Deep forest green background */
+    --fg: #eef7f0;       /* High contrast mint-white text */
+    --accent1: #10b981;  /* Glowing neon emerald green */
+    --accent2: #059669;  /* Deep vibrant emerald */
+    --accent3: #34d399;  /* Light mint green */
+    --accent4: #022c22;  /* Dark hunter green shadow */
+}
+
+/* theme toggle button */
+nav .theme-toggle-btn {
+  padding: 0.6em 1.2em;
+  background-color: var(--bg2);
+  color: var(--fg);
+  border-radius: 0.4em;
+  cursor: pointer;
+  border: 1px solid var(--fg);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+nav .theme-toggle-btn:hover {
+  background-color: var(--fg);
+  color: var(--bg);
+}
   
   * {
     margin: 0;
