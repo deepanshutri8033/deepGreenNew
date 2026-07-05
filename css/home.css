@@ -245,6 +245,11 @@
     background-color: var(--fg);
     color: var(--bg);
   }
+
+  .services #service-card-5 .service-card-inner {
+    background-color: var(--accent4);
+    color: var(--bg);
+  }
   
   @media (max-width: 1000px) {
     .hero .hero-footer .hero-footer-symbols {

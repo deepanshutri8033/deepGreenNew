@@ -163,25 +163,68 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Handle form submission with feedback
+  // Handle form submission with feedback (Mock Audit Simulation)
   const handleFormSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
     const form = e.target;
     const submitBtn = form.querySelector(".submit-btn"); // Submit button
     const successMessage = document.getElementById("successMessage"); // Success message element
+    const resultStatus = document.getElementById("resultStatus");
+    const resultDetails = document.getElementById("resultDetails");
+
+    const roi = document.getElementById("projectType").value;
+    const company = document.getElementById("lastName").value || "Target Company";
+
     submitBtn.style.transform = "translateY(-1px)"; // Slight button press effect
-    submitBtn.textContent = "Sending..."; // Update button text
+    submitBtn.textContent = "Analyzing Geospatial Data..."; // Update button text
     submitBtn.disabled = true; // Disable button
+    
+    // Hide previous message if open
+    successMessage.style.display = "none";
+    successMessage.style.opacity = "0";
+
     setTimeout(() => {
-      form.reset(); // Reset form
-      submitBtn.textContent = "Send Message"; // Restore button text
-      submitBtn.disabled = false; // Enable button
-      submitBtn.style.transform = ""; // Reset button style
-      successMessage.classList.add("show"); // Show success message
+      submitBtn.textContent = "Verifying Claims via RAG...";
+      
       setTimeout(() => {
-        successMessage.classList.remove("show"); // Hide after 5s
-      }, 5000);
-    }, 1500); // Simulate form submission delay
+        submitBtn.textContent = "Running Computer Vision...";
+        
+        setTimeout(() => {
+          submitBtn.textContent = "Verify Sustainability Claims"; // Restore button text
+          submitBtn.disabled = false; // Enable button
+          submitBtn.style.transform = ""; // Reset button style
+
+          // Populate results based on selected Region of Interest (ROI)
+          if (roi === "amazon") {
+            resultStatus.innerHTML = "🚨 PHANTOM FOREST DETECTED";
+            resultStatus.style.color = "#ff3333";
+            resultDetails.innerHTML = `<strong>Company</strong>: ${company}<br><strong>Location</strong>: Amazon Rainforest (Zone 4) [Lat: -3.46, Long: -62.21]<br><strong>Claimed</strong>: 5,000 trees planted.<br><strong>Reality (Sentinel-2 NDVI Scan)</strong>: No tree canopy growth detected. Green cover has decreased by 12% over the last 6 months.<br><strong>Deforestation Confidence Score</strong>: 94% (Deforestation confirmed).`;
+          } else if (roi === "congo") {
+            resultStatus.innerHTML = "✅ CLAIMS VERIFIED";
+            resultStatus.style.color = "#4caf50";
+            resultDetails.innerHTML = `<strong>Company</strong>: ${company}<br><strong>Location</strong>: Congo Basin (Zone A) [Lat: -1.25, Long: 15.34]<br><strong>Claimed</strong>: 2,500 trees protected.<br><strong>Reality (Sentinel-2 NDVI Scan)</strong>: Stable forest cover detected. Vegetation signatures match claim expectations.<br><strong>Verification Confidence Score</strong>: 98% (High certainty protection verified).`;
+          } else if (roi === "siberia") {
+            resultStatus.innerHTML = "⚠️ SEASONAL ANOMALY DETECTED";
+            resultStatus.style.color = "#ffeb3b";
+            resultDetails.innerHTML = `<strong>Company</strong>: ${company}<br><strong>Location</strong>: Boreal Forest (Siberia) [Lat: 61.23, Long: 92.56]<br><strong>Claimed</strong>: 10,000 saplings planted.<br><strong>Reality (Sentinel-2 NDVI Scan)</strong>: High seasonal variability detected (heavy snow cover). Sapling growth is currently masked. Re-verification scheduled for summer cycle.<br><strong>Confidence Score</strong>: 78% (Inconclusive due to weather).`;
+          } else if (roi === "sumatra") {
+            resultStatus.innerHTML = "⚠️ INDUSTRIAL CROPS DETECTED";
+            resultStatus.style.color = "#ff9800";
+            resultDetails.innerHTML = `<strong>Company</strong>: ${company}<br><strong>Location</strong>: Sumatra Plantation [Lat: -0.78, Long: 102.13]<br><strong>Claimed</strong>: 8,000 natural trees planted.<br><strong>Reality (Sentinel-2 NDVI Scan)</strong>: Grid canopy signatures detected. Land is being utilized as an industrial palm/rubber tree monoculture plantation rather than natural forest restoration.<br><strong>Confidence Score</strong>: 87% (Verification mismatch).`;
+          } else {
+            resultStatus.innerHTML = "ℹ️ AUDIT COMPLETED";
+            resultStatus.style.color = "#00bcd4";
+            resultDetails.innerHTML = `Claims parsed successfully. No region anomalies detected for general test.`;
+          }
+
+          successMessage.style.display = "block";
+          setTimeout(() => {
+            successMessage.style.opacity = "1";
+          }, 50);
+
+        }, 1000);
+      }, 1000);
+    }, 1200); // Simulate pipeline verification delays
   };
 
   // Enhance form inputs with focus/blur animations

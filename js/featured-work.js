@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Create image cards dynamically
     const imagesContainer = document.querySelector(".featured-images");
     imagesContainer.innerHTML = ""; // Clear existing content
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 5; i++) {
       const featuredImgCard = document.createElement("div");
       featuredImgCard.className = `featured-img-card featured-img-card-${i}`;
       const img = document.createElement("img");
