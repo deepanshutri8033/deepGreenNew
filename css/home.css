@@ -103,6 +103,12 @@
   .featured-work .featured-title-wrapper h1 {
     text-align: center;
     transform: translateY(-0.5em);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.95), 0 0 5px rgba(0, 0, 0, 0.95);
+  }
+  
+  .featured-work .featured-title-wrapper h1 span {
+    color: var(--accent1);
+    transition: color 0.3s ease;
   }
   
   .featured-work .featured-images {
