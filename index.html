@@ -1,427 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeepGreen | AI-Powered Satellite Auditing Platform</title>
-    <link rel="icon" href="/images/global/site-icon.png" />
-    <script>
-      (function() {
-        const savedTheme = localStorage.getItem("theme") || "dark";
-        if (savedTheme === "dark") {
-          document.documentElement.classList.add("dark-theme");
-        }
-      })();
-    </script>
 
-    <link rel="stylesheet" href="/css/transition.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/globals.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <link rel="stylesheet" href="/css/project.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepGreen | AI-Powered Satellite Auditing Platform</title>
+  <link rel="icon" href="/images/global/site-icon.png" />
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark-theme");
+      }
+    })();
+  </script>
 
-  </head>
-  <body>
-    <!-- page transition  -->
-    <div class="transition">
-      <div class="transition-overlay overlay-1"></div>
-      <div class="transition-overlay overlay-2"></div>
-      <div class="transition-overlay overlay-3"></div>
-      <div class="transition-overlay overlay-4"></div>
-      <div class="transition-overlay overlay-5"></div>
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/about.css" />
+  <link rel="stylesheet" href="/css/project.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/strands.css" />
+
+</head>
+
+<body>
+  <!-- page transition  -->
+  <div class="transition">
+    <div class="transition-overlay overlay-1"></div>
+    <div class="transition-overlay overlay-2"></div>
+    <div class="transition-overlay overlay-3"></div>
+    <div class="transition-overlay overlay-4"></div>
+    <div class="transition-overlay overlay-5"></div>
+  </div>
+
+  <div class="page home-page">
+    <nav>
+      <div class="logo">
+        <div class="logo-container">
+          <p class="mn"><a href="/">D ✦ G</a></p>
+        </div>
+      </div>
+      <div class="theme-toggle-btn">
+        <p class="mn">Theme</p>
+      </div>
+      <div class="menu-toggle-btn">
+        <div class="menu-toggle-btn-wrapper">
+          <p class="mn open-label">Menu</p>
+          <p class="mn close-label">Close</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-overlay">
+      <div class="nav-items">
+        <div class="nav-item active">
+          <p><a href="/">Home</a></p>
+        </div>
+        <div class="nav-item">
+          <p><a href="/about">About</a></p>
+        </div>
+        <div class="nav-item">
+          <p><a href="/contact">Try Auditor</a></p>
+        </div>
+      </div>
+      <div class="nav-footer">
+        <div class="nav-footer-item">
+          <div class="nav-footer-item-header">
+            <p class="mn">Resources</p>
+          </div>
+          <div class="nav-footer-item-copy">
+            <p class="mn"><a href="https://github.com/zain358/Awwards-Portfolio-Website" target="_blank">Github Repo</a>
+            </p>
+            <p class="mn"><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel</a></p>
+          </div>
+        </div>
+        <div class="nav-footer-item">
+          <div class="nav-footer-item-copy">
+            <p class="mn"></p>
+          </div>
+        </div>
+        <div class="nav-footer-item">
+          <div class="nav-footer-item-header">
+            <p class="mn">Hackathon Entry</p>
+          </div>
+          <div class="nav-footer-item-copy">
+            <p class="mn">
+              <a href="#">DeepGreen System Core</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="page home-page">
-        <nav>
-          <div class="logo">
-            <div class="logo-container">
-              <p class="mn"><a href="/">D ✦ G</a></p>
-            </div>
-          </div>
-          <div class="theme-toggle-btn">
-            <p class="mn">Theme</p>
-          </div>
-          <div class="menu-toggle-btn">
-            <div class="menu-toggle-btn-wrapper">
-              <p class="mn open-label">Menu</p>
-              <p class="mn close-label">Close</p>
-            </div>
-          </div>
-        </nav>
-  
-        <div class="nav-overlay">
-          <div class="nav-items">
-            <div class="nav-item active">
-              <p><a href="/">Home</a></p>
-            </div>
-            <div class="nav-item">
-              <p><a href="/about">About</a></p>
-            </div>
-            <div class="nav-item">
-              <p><a href="/contact">Try Auditor</a></p>
-            </div>
-          </div>
-          <div class="nav-footer">
-            <div class="nav-footer-item">
-              <div class="nav-footer-item-header">
-                <p class="mn">Resources</p>
-              </div>
-              <div class="nav-footer-item-copy">
-                <p class="mn"><a href="https://github.com/zain358/Awwards-Portfolio-Website" target="_blank">Github Repo</a></p>
-                <p class="mn"><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel</a></p>
-              </div>
-            </div>
-            <div class="nav-footer-item">
-              <div class="nav-footer-item-copy">
-                <p class="mn"></p>
-              </div>
-            </div>
-            <div class="nav-footer-item">
-              <div class="nav-footer-item-header">
-                <p class="mn">Hackathon Entry</p>
-              </div>
-              <div class="nav-footer-item-copy">
-                <p class="mn">
-                  <a href="#"
-                    >DeepGreen System Core</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- home - hero -->
+    <section class="hero">
+      <div id="strands-container" class="strands-container strands-container-hero"></div>
+      <div class="hero-header-wrapper">
+        <div class="hero-header hero-header-1">
+          <h1>Deep</h1>
         </div>
-             
-        <!-- home - hero -->
-      <section class="hero">
-        <div class="hero-header-wrapper">
-          <div class="hero-header hero-header-1">
-            <h1>Deep</h1>
-          </div>
-          <div class="hero-header hero-header-2">
-            <h1>Green</h1>
-          </div>
+        <div class="hero-header hero-header-2">
+          <h1>Green</h1>
         </div>
-        <div class="hero-footer">
-          <div class="hero-footer-symbols">
-            <img src="/images/global/symbols.png" alt="" />
-          </div>
-          <div class="hero-footer-scroll-down">
-            <p class="mn"><a href="#workflow" class="resume-link">Auditing // Workflow</a></p>
-          </div>
-          <div class="hero-footer-tags">
-            <p class="mn">Ending the Era of 'Phantom Forests'</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- home - hero img holder -->
-      <section class="hero-img-holder">
-        <div class="hero-img">
-          <img src="/images/work-items/work-item-1.jpg" alt="DeepGreen Satellite View" />
-        </div>
-      </section>
-
-
-      <!-- about - about hero -->
-      <section class="about-hero">
-        <div class="about-hero-header">
-          <h1>The Hook //</h1>
-          <h1>The Problem</h1>
-        </div>
-        <div class="about-hero-bio">
-          <p class="ss">
-            Today, large corporations file misleading Sustainability Reports to save on taxes and improve their brand image. They claim to have planted thousands of trees, but in reality, those trees exist only on paper—a practice known as <strong>'Phantom Forests'</strong>. DeepGreen directly targets this gap, verifying corporate claims against real-world satellite ground truth automatically.
-          </p>
-          <p class="mn">100% Software-Based Audit Engine // AI vs Greenwashing</p>
-        </div>
-        <div class="about-hero-portrait">
-          <img
-            src="/images/work-items/work-item-5.jpg"
-            alt="DeepGreen Deforestation Detection"
-          />
-        </div>
-      </section>
-
-      <!-- about - about copy -->
-      <section class="about-copy">
-        <div class="about-copy-content">
-          <h3>The <span>Carbon Trust Deficit</span></h3>
-          <p class="ss">
-            Global carbon markets are currently plagued by 'phantom offsets' and untrusted data. Studies show that over half of active nature-based carbon credits do not represent genuine tree growth. DeepGreen solves this accountability gap by replacing slow, manual compliance audits with instantaneous, unalterable satellite telemetry.
-          </p>
-        </div>
-        <div class="tag" id="tag-1"><p>Greenwashing</p></div>
-        <div class="tag" id="tag-2"><p>Phantom Forests</p></div>
-        <div class="tag" id="tag-3"><p>Double Counting</p></div>
-        <div class="tag" id="tag-4"><p>ESG Fraud</p></div>
-        <div class="tag" id="tag-5"><p>Copernicus AI</p></div>
-      </section>
-
-      <!-- about - stats / highlights -->
-      <section class="stats">
-        <div class="stats-row">
-          <div class="stats-header">
-            <h1>Project</h1>
-            <h1>Highlights</h1>
-          </div>
-        </div>
-        <div class="stats-row">
-          <div class="stats-item stats-item-1">
-            <h2>100%</h2>
-            <p>Software-driven. Accesses open-source satellite datasets without expensive hardware.</p>
-          </div>
-          <div class="stats-item stats-item-2">
-            <h2>NDVI Verification</h2>
-            <p>Uses multi-spectral imagery to verify actual plant growth, filtering seasonal patterns.</p>
-          </div>
-          <div class="stats-item stats-item-3">
-            <h2>Proactive Alerts</h2>
-            <p>Auto-generates legal notices and triggers warning alarms immediately upon fraud detection.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- home - featured work -->
-      <section class="featured-work" id="workflow">
-        <div class="featured-images"></div>
-        <div class="featured-titles">
-          <div class="featured-title-wrapper">
-            <h1 class="featured-title">Auditing Pipeline</h1>
-          </div>
-          <div class="featured-title-wrapper">
-            <div class="featured-title-img">
-              <img src="/images/work-items/work-item-2.jpg" alt="Step 1: Document Upload" />
-            </div>
-            <h1 class="featured-title">Step 1 // Intake</h1>
-          </div>
-          <div class="featured-title-wrapper">
-            <div class="featured-title-img">
-              <img src="/images/work-items/work-item-3.jpg" alt="Step 2: RAG Parsing" />
-            </div>
-            <h1 class="featured-title">Step 2 // Insight</h1>
-          </div>
-          <div class="featured-title-wrapper">
-            <div class="featured-title-img">
-              <img src="/images/work-items/work-item-4.jpg" alt="Step 3: Satellite Cross-Ref" />
-            </div>
-            <h1 class="featured-title">Step 3 // Check</h1>
-          </div>
-          <div class="featured-title-wrapper">
-            <div class="featured-title-img">
-              <img src="/images/work-items/work-item-5.jpg" alt="Step 4: Compliance Action" />
-            </div>
-            <h1 class="featured-title">Step 4 // Action</h1>
-          </div>
-        </div>
-        <div class="featured-work-indicator"></div>
-        <div class="featured-work-footer">
-          <p class="mn">Satellite Audit Flow [ 4 Steps ]</p>
-          <p class="mn">///////////////////</p>
-          <p class="mn"><a href="/contact">Launch Live Simulator</a></p>
-        </div>
-      </section>
-
-      
-
-            <!-- home - services header -->
-           <section class="services-header" id="architecture">
-            <div class="services-header-content">
-              <div class="services-profile-icon">
-                <img
-                  src="/images/work-items/work-item-10.jpg"
-                  alt="DeepGreen Brand Icon"
-                />
-              </div>
-              <p>Unmatched Accuracy. Transparent Auditing.</p>
-              <div class="services-header-title">
-                <h1>Key Differentiators</h1>
-                <h1>& Core Features</h1>
-              </div>
-              <div class="services-header-arrow-icon">
-                <h1>&#8595;</h1>
-              </div>
-            </div>
-          </section>
-
-          <!-- home - services/skills section -->
-          <section class="services">
-            <div class="service-card" id="service-card-1">
-              <div class="service-card-inner">
-                <div class="service-card-content">
-                  <h1>No Hardware Required</h1>
-                  <p class="ss">
-                    DeepGreen is a 100% software-based platform. We bypass expensive and hard-to-maintain physical ground sensors by pulling direct, open-source geospatial data from global satellite networks and automated web-scraping pipelines.
-                  </p>
-                </div>
-                <div class="service-card-img">
-                  <img
-                    src="/images/services/service-1.jpg"
-                    alt="Satellite network scanning"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="service-card" id="service-card-2">
-              <div class="service-card-inner">
-                <div class="service-card-content">
-                  <h1>Confidence Scoring</h1>
-                  <p class="ss">
-                    Geospatial data is noisy. Our engine filters out cloud cover, shadows, and seasonal vegetation changes to calculate a Deforestation Confidence Score (0–100%), ensuring regulators only act on high-certainty violations.
-                  </p>
-                </div>
-                <div class="service-card-img">
-                  <img
-                    src="/images/services/service-2.jpg"
-                    alt="Confidence index map"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="service-card" id="service-card-3">
-              <div class="service-card-inner">
-                <div class="service-card-content">
-                  <h1>Multi-Year Trend Analysis</h1>
-                  <p class="ss">
-                    Avoid false alarms from natural cycles. DeepGreen tracks 3–5 year historical NDVI trends, mapping true long-term deforestation versus cyclical seasonal agricultural patterns.
-                  </p>
-                </div>
-                <div class="service-card-img">
-                  <img
-                    src="/images/services/service-3.jpg"
-                    alt="Trend line graph overlay"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="service-card" id="service-card-4">
-              <div class="service-card-inner">
-                <div class="service-card-content">
-                  <h1>Explainability Layer</h1>
-                  <p class="ss">
-                    Every audit result is verifiable. We provide citation-style tracing that highlights the exact source paragraphs and pages from the corporate CSR report, building absolute trust by showing exactly how the AI reached its conclusion.
-                  </p>
-                </div>
-                <div class="service-card-img">
-                  <img
-                    src="/images/services/service-4.jpg"
-                    alt="Report highlighting screen"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="service-card" id="service-card-5">
-              <div class="service-card-inner">
-                <div class="service-card-content">
-                  <h1>Automated Alerting</h1>
-                  <p class="ss">
-                    Immediate action on violation. When deforestation is detected, DeepGreen instantly generates a legal compliance PDF and dispatches alerts directly to government environmental regulators.
-                  </p>
-                </div>
-                <div class="service-card-img">
-                  <img
-                    src="/images/services/service-5.jpg"
-                    alt="Automated compliance email warning"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          
-
-
-        <!-- home - contact cta -->
-      <section class="contact-cta">
-        <div class="contact-button">
-          <a href="/contact"></a>
-          <div class="contact-text-small">
-            <p>Manual Audit: 3-6 Months // DeepGreen: A Few Minutes</p>
-          </div>
-          <div class="contact-text-large"><h1>Try Simulator</h1></div>
-        </div>
-      </section>
-
-      <!-- home - visualization video section -->
-      <section class="visualization-header">
-        <div class="visualization-header-content">
-          <h1>Verification</h1>
-          <h1>Visualization</h1>
-        </div>
-      </section>
-
-      <section class="visualization-img-holder">
-        <div class="visualization-img">
-          <video src="/v2.mp4" autoplay loop muted playsinline id="viz-video"></video>
-          <div class="video-mute-btn" id="videoMuteBtn">
-            <p class="mn">Mute</p>
-          </div>
-        </div>
-      </section>
-
-<!-- home - footer -->
-<footer>
-    <div class="footer-container">
-      <div class="footer-symbols footer-symbols-1">
-        <img src="/images/global/s6.png" alt="" />
-        <img src="/images/global/s6.png" alt="" />
       </div>
-      <div class="footer-symbols footer-symbols-2">
-        <img src="/images/global/s6.png" alt="" />
-        <img src="/images/global/s6.png" alt="" />
-      </div>
-      <div class="footer-header">
-        <h1>DeepGreen</h1>
-      </div>
-      <div class="footer-row">
-        <div class="footer-col">
-          <p>Auditing Target</p>
-          <p><a href="#workflow">Workflow</a></p>
-          <p><a href="/contact">Launch Simulator</a></p>
+      <div class="hero-footer">
+        <div class="hero-footer-symbols">
+          <img src="/images/global/symbols.png" alt="" />
         </div>
-        <div class="footer-col">
-          <p>Target Users</p>
-          <p><a href="#">Government Agencies</a></p>
-          <p><a href="#">Carbon Registries (Verra)</a></p>
-          <p><a href="#">ESG Auditing Firms</a></p>
+        <div class="hero-footer-scroll-down">
+          <p class="mn"><a href="#workflow" class="resume-link">Auditing // Workflow</a></p>
         </div>
-        <div class="footer-col">
-          <p>System Stack</p>
-          <p><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel-2</a></p>
-          <p><a href="https://github.com" target="_blank">RAG Parsing Engine</a></p>
-          <p><a href="https://github.com" target="_blank">NDVI Computer Vision</a></p>
+        <div class="hero-footer-tags">
+          <p class="mn">Ending the Era of 'Phantom Forests'</p>
         </div>
-        <div class="footer-col">
-          <p>Compliance Action</p>
-          <p><a href="#">Notice Generator</a></p>
-          <p><a href="#">Alerting (Resend API)</a></p>
-          <p><a href="#">EPA Section 45 Rules</a></p>
-        </div>
-        
       </div>
-      <div class="copyright-info">
-        <p class="mn">© - DeepGreen // National Hackathon Submission</p>
-        <p class="mn"></p>
+    </section>
+
+    <!-- home - hero img holder -->
+    <section class="hero-img-holder">
+      <div class="hero-img">
+        <img src="/images/work-items/work-item-1.jpg" alt="DeepGreen Satellite View" />
       </div>
-      <div class="explosion-container"></div>
-    </div>
-  </footer>
+    </section>
+
+
+    <!-- about - about hero -->
+    <section class="about-hero">
+      <div class="about-hero-header">
+        <h1>The Hook //</h1>
+        <h1>The Problem</h1>
+      </div>
+      <div class="about-hero-bio">
+        <p class="ss">
+          Today, large corporations file misleading Sustainability Reports to save on taxes and improve their brand
+          image. They claim to have planted thousands of trees, but in reality, those trees exist only on paper—a
+          practice known as <strong>'Phantom Forests'</strong>. DeepGreen directly targets this gap, verifying corporate
+          claims against real-world satellite ground truth automatically.
+        </p>
+        <p class="mn">100% Software-Based Audit Engine // AI vs Greenwashing</p>
+      </div>
+      <div class="about-hero-portrait">
+        <img src="/images/work-items/work-item-5.jpg" alt="DeepGreen Deforestation Detection" />
+      </div>
+    </section>
+
+    <!-- about - about copy -->
+    <section class="about-copy">
+      <div class="about-copy-content">
+        <h3>The <span>Carbon Trust Deficit</span></h3>
+        <p class="ss">
+          Global carbon markets are currently plagued by 'phantom offsets' and untrusted data. Studies show that over
+          half of active nature-based carbon credits do not represent genuine tree growth. DeepGreen solves this
+          accountability gap by replacing slow, manual compliance audits with instantaneous, unalterable satellite
+          telemetry.
+        </p>
+      </div>
+      <div class="tag" id="tag-1">
+        <p>Greenwashing</p>
+      </div>
+      <div class="tag" id="tag-2">
+        <p>Phantom Forests</p>
+      </div>
+      <div class="tag" id="tag-3">
+        <p>Double Counting</p>
+      </div>
+      <div class="tag" id="tag-4">
+        <p>ESG Fraud</p>
+      </div>
+      <div class="tag" id="tag-5">
+        <p>Copernicus AI</p>
+      </div>
+    </section>
+
+    <!-- about - stats / highlights -->
+    <section class="stats">
+      <div class="stats-row">
+        <div class="stats-header">
+          <h1>Project</h1>
+          <h1>Highlights</h1>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stats-item stats-item-1">
+          <h2>100%</h2>
+          <p>Software-driven. Accesses open-source satellite datasets without expensive hardware.</p>
+        </div>
+        <div class="stats-item stats-item-2">
+          <h2>NDVI Verification</h2>
+          <p>Uses multi-spectral imagery to verify actual plant growth, filtering seasonal patterns.</p>
+        </div>
+        <div class="stats-item stats-item-3">
+          <h2>Proactive Alerts</h2>
+          <p>Auto-generates legal notices and triggers warning alarms immediately upon fraud detection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- home - featured work -->
+    <section class="featured-work" id="workflow">
+      <div class="featured-images"></div>
+      <div class="featured-titles">
+        <div class="featured-title-wrapper">
+          <h1 class="featured-title">Auditing Pipeline</h1>
+        </div>
+        <div class="featured-title-wrapper">
+          <div class="featured-title-img">
+            <img src="/images/work-items/work-item-2.jpg" alt="Step 1: Document Upload" />
+          </div>
+          <h1 class="featured-title">Step 1 // Intake</h1>
+        </div>
+        <div class="featured-title-wrapper">
+          <div class="featured-title-img">
+            <img src="/images/work-items/work-item-3.jpg" alt="Step 2: RAG Parsing" />
+          </div>
+          <h1 class="featured-title">Step 2 // Insight</h1>
+        </div>
+        <div class="featured-title-wrapper">
+          <div class="featured-title-img">
+            <img src="/images/work-items/work-item-4.jpg" alt="Step 3: Satellite Cross-Ref" />
+          </div>
+          <h1 class="featured-title">Step 3 // Check</h1>
+        </div>
+        <div class="featured-title-wrapper">
+          <div class="featured-title-img">
+            <img src="/images/work-items/work-item-5.jpg" alt="Step 4: Compliance Action" />
+          </div>
+          <h1 class="featured-title">Step 4 // Action</h1>
+        </div>
+      </div>
+      <div class="featured-work-indicator"></div>
+      <div class="featured-work-footer">
+        <p class="mn">Satellite Audit Flow [ 4 Steps ]</p>
+        <p class="mn">///////////////////</p>
+        <p class="mn"><a href="/contact">Launch Live Simulator</a></p>
+      </div>
+    </section>
 
 
 
-    </div>
-    <script type="module" src="/js/transition.js"></script>
-    <script type="module" src="/js/lenis-scroll.js"></script>
-    <script type="module" src="/js/menu.js"></script>
-    <script type="module" src="/js/hero.js"></script>
-    <script type="module" src="/js/featured-work.js"></script>
-    <script type="module" src="/js/services.js"></script>
-    <script type="module" src="/js/footer.js"></script>
-    <script type="module" src="/js/about.js"></script>
-    
-    
-  </body>
+    <!-- home - services header -->
+    <section class="services-header" id="architecture">
+      <div class="services-header-content">
+        <div class="services-profile-icon">
+          <img src="/images/work-items/work-item-10.jpg" alt="DeepGreen Brand Icon" />
+        </div>
+        <p>Unmatched Accuracy. Transparent Auditing.</p>
+        <div class="services-header-title">
+          <h1>Key Differentiators</h1>
+          <h1>& Core Features</h1>
+        </div>
+        <div class="services-header-arrow-icon">
+          <h1>&#8595;</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- home - services/skills section -->
+    <section class="services">
+      <div class="service-card" id="service-card-1">
+        <div class="service-card-inner">
+          <div class="service-card-content">
+            <h1>No Hardware Required</h1>
+            <p class="ss">
+              DeepGreen is a 100% software-based platform. We bypass expensive and hard-to-maintain physical ground
+              sensors by pulling direct, open-source geospatial data from global satellite networks and automated
+              web-scraping pipelines.
+            </p>
+          </div>
+          <div class="service-card-img">
+            <img src="/images/services/service-1.jpg" alt="Satellite network scanning" />
+          </div>
+        </div>
+      </div>
+      <div class="service-card" id="service-card-2">
+        <div class="service-card-inner">
+          <div class="service-card-content">
+            <h1>Confidence Scoring</h1>
+            <p class="ss">
+              Geospatial data is noisy. Our engine filters out cloud cover, shadows, and seasonal vegetation changes to
+              calculate a Deforestation Confidence Score (0–100%), ensuring regulators only act on high-certainty
+              violations.
+            </p>
+          </div>
+          <div class="service-card-img">
+            <img src="/images/services/service-2.jpg" alt="Confidence index map" />
+          </div>
+        </div>
+      </div>
+      <div class="service-card" id="service-card-3">
+        <div class="service-card-inner">
+          <div class="service-card-content">
+            <h1>Multi-Year Trend Analysis</h1>
+            <p class="ss">
+              Avoid false alarms from natural cycles. DeepGreen tracks 3–5 year historical NDVI trends, mapping true
+              long-term deforestation versus cyclical seasonal agricultural patterns.
+            </p>
+          </div>
+          <div class="service-card-img">
+            <img src="/images/services/service-3.jpg" alt="Trend line graph overlay" />
+          </div>
+        </div>
+      </div>
+      <div class="service-card" id="service-card-4">
+        <div class="service-card-inner">
+          <div class="service-card-content">
+            <h1>Explainability Layer</h1>
+            <p class="ss">
+              Every audit result is verifiable. We provide citation-style tracing that highlights the exact source
+              paragraphs and pages from the corporate CSR report, building absolute trust by showing exactly how the AI
+              reached its conclusion.
+            </p>
+          </div>
+          <div class="service-card-img">
+            <img src="/images/services/service-4.jpg" alt="Report highlighting screen" />
+          </div>
+        </div>
+      </div>
+      <div class="service-card" id="service-card-5">
+        <div class="service-card-inner">
+          <div class="service-card-content">
+            <h1>Automated Alerting</h1>
+            <p class="ss">
+              Immediate action on violation. When deforestation is detected, DeepGreen instantly generates a legal
+              compliance PDF and dispatches alerts directly to government environmental regulators.
+            </p>
+          </div>
+          <div class="service-card-img">
+            <img src="/images/services/service-5.jpg" alt="Automated compliance email warning" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- home - contact cta -->
+    <section class="contact-cta">
+      <div class="contact-button">
+        <a href="/contact"></a>
+        <div class="contact-text-small">
+          <p>Manual Audit: 3-6 Months // DeepGreen: A Few Minutes</p>
+        </div>
+        <div class="contact-text-large">
+          <h1>Try Simulator</h1>
+        </div>
+    </section>
+
+    <!-- home - visualization video section -->
+    <section class="visualization-header">
+      <div class="visualization-header-content">
+        <h1>Verification</h1>
+        <h1>Visualization</h1>
+      </div>
+    </section>
+
+    <section class="visualization-img-holder">
+      <div class="visualization-img">
+        <video src="/v2.mp4" autoplay loop muted playsinline id="viz-video"></video>
+        <div class="video-mute-btn" id="videoMuteBtn">
+          <p class="mn">Mute</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- home - footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-symbols footer-symbols-1">
+          <img src="/images/global/s6.png" alt="" />
+          <img src="/images/global/s6.png" alt="" />
+        </div>
+        <div class="footer-symbols footer-symbols-2">
+          <img src="/images/global/s6.png" alt="" />
+          <img src="/images/global/s6.png" alt="" />
+        </div>
+        <div class="footer-header">
+          <h1>DeepGreen</h1>
+        </div>
+        <div class="footer-row">
+          <div class="footer-col">
+            <p>Auditing Target</p>
+            <p><a href="#workflow">Workflow</a></p>
+            <p><a href="/contact">Launch Simulator</a></p>
+          </div>
+          <div class="footer-col">
+            <p>Target Users</p>
+            <p><a href="#">Government Agencies</a></p>
+            <p><a href="#">Carbon Registries (Verra)</a></p>
+            <p><a href="#">ESG Auditing Firms</a></p>
+          </div>
+          <div class="footer-col">
+            <p>System Stack</p>
+            <p><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel-2</a></p>
+            <p><a href="https://github.com" target="_blank">RAG Parsing Engine</a></p>
+            <p><a href="https://github.com" target="_blank">NDVI Computer Vision</a></p>
+          </div>
+          <div class="footer-col">
+            <p>Compliance Action</p>
+            <p><a href="#">Notice Generator</a></p>
+            <p><a href="#">Alerting (Resend API)</a></p>
+            <p><a href="#">EPA Section 45 Rules</a></p>
+          </div>
+
+        </div>
+        <div class="copyright-info">
+          <p class="mn">© - DeepGreen // National Hackathon Submission</p>
+          <p class="mn"></p>
+        </div>
+        <div class="explosion-container"></div>
+      </div>
+    </footer>
+
+
+
+  </div>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/lenis-scroll.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/hero.js"></script>
+  <script type="module" src="/js/featured-work.js"></script>
+  <script type="module" src="/js/services.js"></script>
+  <script type="module" src="/js/footer.js"></script>
+  <script type="module" src="/js/about.js"></script>
+  <script type="module" src="/js/strands-instance.js"></script>
+
+
+</body>
+
 </html>
