@@ -40,8 +40,12 @@ nav .theme-toggle-btn:hover {
     box-sizing: border-box;
   }
   
-  body {
+  html {
     background-color: var(--bg);
+  }
+
+  body {
+    background-color: transparent;
     color: var(--fg);
     overflow-x: hidden;
   }

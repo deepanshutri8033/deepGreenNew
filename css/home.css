@@ -358,7 +358,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--bg);
+    background-color: transparent;
   }
   
   .visualization-header-content h1 {
