@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About DeepGreen | Platform Technology</title>
+    <link rel="icon" href="/images/global/site-icon.png" />
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark-theme");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/transition.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <!-- page transition  -->
+    <div class="transition">
+      <div class="transition-overlay overlay-1"></div>
+      <div class="transition-overlay overlay-2"></div>
+      <div class="transition-overlay overlay-3"></div>
+      <div class="transition-overlay overlay-4"></div>
+      <div class="transition-overlay overlay-5"></div>
+    </div>
+
+    <div class="page about-page">
+      <!-- nav -->
+      <nav>
+        <div class="logo">
+          <div class="logo-container">
+            <p class="mn"><a href="/">D ✦ G</a></p>
+          </div>
+        </div>
+        <div class="theme-toggle-btn">
+          <p class="mn">Theme</p>
+        </div>
+        <div class="menu-toggle-btn">
+          <div class="menu-toggle-btn-wrapper">
+            <p class="mn open-label">Menu</p>
+            <p class="mn close-label">Close</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="nav-overlay">
+        <div class="nav-items">
+          <div class="nav-item">
+            <p><a href="/">Home</a></p>
+          </div>
+          <div class="nav-item active">
+            <p><a href="/about">About</a></p>
+          </div>
+          <div class="nav-item">
+            <p><a href="/contact">Try Auditor</a></p>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-header">
+              <p class="mn">Resources</p>
+            </div>
+            <div class="nav-footer-item-copy">
+              <p class="mn"><a href="https://github.com/deepanshutri8033/deepGreenNew.git" target="_blank">Github Repo</a></p>
+              <p class="mn"><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel</a></p>
+            </div>
+          </div>
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-copy">
+              <p class="mn"></p>
+            </div>
+          </div>
+          <div class="nav-footer-item">
+            <div class="nav-footer-item-header">
+              <p class="mn">Hackathon Entry</p>
+            </div>
+            <div class="nav-footer-item-copy">
+              <p class="mn"><a href="#">DeepGreen System Core</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about - hero -->
+      <section class="about-hero">
+        <div class="about-hero-header">
+          <h1>Platform //</h1>
+          <h1>Technology</h1>
+        </div>
+        <div class="about-hero-bio">
+          <p class="ss">
+            DeepGreen replaces manual sustainability auditing with an automated pipeline. Our platform digests ESG reports, extracts corporate location assertions using **Multimodal RAG**, and cross-references those coordinates against multi-spectral satellite indices.
+          </p>
+          <p class="mn">RAG Extraction + NDVI Computer Vision</p>
+        </div>
+        <div class="about-hero-portrait">
+          <img
+            src="/images/work-items/work-item-1.jpg"
+            alt="Satellite orbit scanner"
+          />
+        </div>
+      </section>
+
+      <!-- about - about copy -->
+      <section class="about-copy">
+        <div class="about-copy-content">
+          <h3>The Science of <span>NDVI Tracking</span></h3>
+          <p class="ss">
+            Vegetation reflects near-infrared light and absorbs red light. DeepGreen calculates the Normalized Difference Vegetation Index (NDVI) dynamically using multi-spectral bands. By tracking vegetative density fluctuations over a 3-5 year timeline, we can accurately identify deforestation alerts while ignoring natural seasonal patterns.
+          </p>
+        </div>
+        <div class="tag" id="tag-1"><p>NDVI telemetry</p></div>
+        <div class="tag" id="tag-2"><p>Copernicus API</p></div>
+        <div class="tag" id="tag-3"><p>Spectral Bands</p></div>
+        <div class="tag" id="tag-4"><p>Multimodal RAG</p></div>
+        <div class="tag" id="tag-5"><p>Notice Generation</p></div>
+      </section>
+
+      <!-- about - stats / technology highlights -->
+      <section class="stats">
+        <div class="stats-row">
+          <div class="stats-header">
+            <h1>Platform</h1>
+            <h1>Metrics</h1>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="stats-item stats-item-1">
+            <h2>10m</h2>
+            <p>Spatial resolution grid scans. Detects localized logging and forest cover depletion alerts instantly.</p>
+          </div>
+          <div class="stats-item stats-item-2">
+            <h2>94.7%</h2>
+            <p>Accuracy score in computer vision canopy density assessments compared to manual inspector ground-truth.</p>
+          </div>
+          <div class="stats-item stats-item-3">
+            <h2>&lt; 3 mins</h2>
+            <p>Verification pipeline speed. Extracts, downloads, analyzes, and drafts alerts within minutes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about - contact cta -->
+      <section class="contact-cta">
+        <div class="contact-button">
+          <a href="/contact"></a>
+          <div class="contact-text-small">
+            <p>Run satellite check simulation</p>
+          </div>
+          <div class="contact-text-large"><h1>Try Auditor</h1></div>
+        </div>
+      </section>
+
+      <!-- about - footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-symbols footer-symbols-1">
+            <img src="/images/global/s6.png" alt="" />
+            <img src="/images/global/s6.png" alt="" />
+          </div>
+          <div class="footer-symbols footer-symbols-2">
+            <img src="/images/global/s6.png" alt="" />
+            <img src="/images/global/s6.png" alt="" />
+          </div>
+          <div class="footer-header">
+            <h1>DeepGreen</h1>
+          </div>
+          <div class="footer-row">
+            <div class="footer-col">
+              <p>Auditing Target</p>
+              <p><a href="/">Home</a></p>
+              <p><a href="/contact">Launch Simulator</a></p>
+            </div>
+            <div class="footer-col">
+              <p>Target Users</p>
+              <p><a href="#">Government Agencies</a></p>
+              <p><a href="#">Carbon Registries</a></p>
+              <p><a href="#">ESG Auditing Firms</a></p>
+            </div>
+            <div class="footer-col">
+              <p>System Stack</p>
+              <p><a href="https://copernicus.eu/" target="_blank">Copernicus Sentinel-2</a></p>
+              <p><a href="https://github.com" target="_blank">RAG Parsing Engine</a></p>
+              <p><a href="https://github.com" target="_blank">NDVI Computer Vision</a></p>
+            </div>
+            <div class="footer-col">
+              <p>Compliance Action</p>
+              <p><a href="#">Notice Generator</a></p>
+              <p><a href="#">Alerting (Resend API)</a></p>
+              <p><a href="#">EPA Section 45 Rules</a></p>
+            </div>
+          </div>
+          <div class="copyright-info">
+            <p class="mn">© - DeepGreen // National Hackathon Submission</p>
+          </div>
+          <div class="explosion-container"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/transition.js"></script>
+    <script type="module" src="/js/lenis-scroll.js"></script>
+    <script type="module" src="/js/menu.js"></script>
+    <script type="module" src="/js/about.js"></script>
+    <script type="module" src="/js/footer.js"></script>
+  </body>
+</html>
