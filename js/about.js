@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const portraitElement = document.querySelector(".about-hero-portrait");
       if (portraitElement) {
         const portraitAnimation = gsap.to(".about-hero-portrait", {
-          y: -200, // Move up by 200px
+          y: -700, // Move up by 700px to fully clear the text on scroll
           rotation: -25, // Rotate -25 degrees
           scrollTrigger: {
             trigger: ".about-hero", // Trigger element
-            start: "top top", // Start when top of hero hits top of viewport
-            end: "bottom top", // End when bottom of hero hits top of viewport
+            start: "top bottom", // Start when top of hero enters bottom of viewport
+            end: "bottom top", // End when bottom of hero leaves top of viewport
             scrub: 1, // Tie animation to scroll position
           },
         });
