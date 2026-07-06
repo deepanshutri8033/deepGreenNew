@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentImageIndex = 1; // Tracks current image in sequence
   const totalImages = 5; // Total number of images for cycling
   let scrollTriggerInstance = null; // Stores ScrollTrigger instance for cleanup
+  let vizScrollTriggerInstance = null; // Stores ScrollTrigger for visualization
 
   // Cycle through images every 250ms
   setInterval(() => {
@@ -33,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Kill existing ScrollTrigger instance to prevent duplicates
     if (scrollTriggerInstance) {
       scrollTriggerInstance.kill();
+    }
+    if (vizScrollTriggerInstance) {
+      vizScrollTriggerInstance.kill();
     }
 
     // Create new ScrollTrigger instance
@@ -50,6 +54,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       },
     });
+
+    // Create new ScrollTrigger instance for visualization
+    vizScrollTriggerInstance = ScrollTrigger.create({
+      trigger: ".visualization-img-holder", // Element that triggers animation
+      start: "top bottom", // Animation starts when top of trigger hits bottom of viewport
+      end: "top top", // Animation ends when top of trigger hits top of viewport
+      onUpdate: (self) => {
+        const progress = self.progress; // Scroll progress (0 to 1)
+        // Animate visualization properties based on scroll progress
+        gsap.set(".visualization-img", {
+          y: `${-110 + 110 * progress}%`, // Move up from -110% to 0%
+          scale: 0.25 + 0.75 * progress, // Scale from 0.25 to 1
+          rotation: -15 + 15 * progress, // Rotate from -15deg to 0deg
+        });
+      },
+    });
   };
 
   // Run animations on page load
@@ -59,4 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => {
     initAnimations();
   });
+
+  // Mute / Unmute Button Handler
+  const videoMuteBtn = document.getElementById("videoMuteBtn");
+  const vizVideo = document.getElementById("viz-video");
+  if (videoMuteBtn && vizVideo) {
+    videoMuteBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      vizVideo.muted = !vizVideo.muted;
+      videoMuteBtn.querySelector("p").innerText = vizVideo.muted ? "Unmute" : "Mute";
+    });
+  }
 });
